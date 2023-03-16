@@ -10,8 +10,8 @@ usage: run.py [-h] [--layers LAYERS] [--type TYPE]
 
 Show nav chart with various layers
 
-options:
+  options:
   -h, --help       show this help message and exit
-  --layers LAYERS  Comma delimited list of layers to show (no spaces)
-  --type TYPE      The map type (Paper, ENC)
+  --layers LAYERS  Comma delimited list of layers (1 - 12) to show. Default is 1,2,3,5
+  --type TYPE      The map type (paper, enc), default is paper
 ```
