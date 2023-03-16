@@ -1,5 +1,5 @@
 # mesa-geo-navex
-A small mesa-geo simulation to explore the layers in NOAA ENC nav charts
+A small mesa-geo simulation to explore the layers in NOAA electronic nav charts
 
 # Usage
 The program runs on the command line with two optional command line parameters:
