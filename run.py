@@ -2,6 +2,16 @@
 
 Created by R. Ramsdell 2023-03-16
 """
+import argparse
+
 from server import server
 
-server.launch()
+parser = argparse.ArgumentParser(description='Show nav chart with various layers')
+parser.add_argument('--layers',
+                    help='The layers to show')
+parser.add_argument('--type',
+                    help='The map type (Paper, ENC, Street')
+
+args = parser.parse_args()
+
+server(layers=args.layers, chart_type=str.lower(args.type)).launch()
