@@ -34,12 +34,16 @@ map_tiles = {"paper": WMSWebTile(url="https://gis.charttools.noaa.gov/arcgis/res
 
 class LayerLabel(TextElement):
     """Show the scenario results"""
-    def __init__(self, layer=None):
+    def __init__(self, layer=None, chart_type=None):
         self.layer = layer
+        self.chart_type = {'paper': "Paper Chart",
+                           'enc': "ENC Chart",
+                           'street': "Open Map"}
 
     def render(self, model):
 
-        return f'Layer: {self.layer}'
+        return '\n'.join([f'Chart Type: {self.chart_type}',
+                          f'Layer: {self.layer}'])
 
 
 def server(layers=None, chart_type="paper"):
