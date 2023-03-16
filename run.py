@@ -12,7 +12,7 @@ parser.add_argument('--layers',
                     help='Comma delimited list of layers to show (no spaces)')
 parser.add_argument('--type',
                     default="paper",
-                    help='The map type (Paper, ENC, Street)')
+                    help='The map type (Paper, ENC)')
 
 args = parser.parse_args()
 print(f'{args.type} {args.layers}')

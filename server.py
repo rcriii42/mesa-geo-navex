@@ -27,8 +27,7 @@ map_tiles = {"paper": WMSWebTile(url="https://gis.charttools.noaa.gov/arcgis/res
                                               "attribution": '&copy; <a href="https://www.nauticalcharts.noaa.gov/">NOAA</a>',
                                               "transparent": True
                                               },
-                                     ),
-             "street": xyz.OpenStreetMap.Mapnik
+                                     )
              }
 
 
@@ -37,8 +36,7 @@ class LayerLabel(TextElement):
     def __init__(self, layer=None, chart_type=None):
         self.layer = layer
         self.chart_type = {'paper': "Paper Chart",
-                           'enc': "ENC Chart",
-                           'street': "Open Map"}
+                           'enc': "ENC Chart"}
 
     def render(self, model):
 
