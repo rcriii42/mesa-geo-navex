@@ -8,9 +8,9 @@ from server import server
 
 parser = argparse.ArgumentParser(description='Show nav chart with various layers')
 parser.add_argument('--layers',
-                    help='The layers to show')
+                    help='Comma delimited list of layers to show (no spaces)')
 parser.add_argument('--type',
-                    help='The map type (Paper, ENC, Street')
+                    help='The map type (Paper, ENC, Street)')
 
 args = parser.parse_args()
 
